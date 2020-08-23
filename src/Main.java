@@ -1,11 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        double weight = 70;
-        double hight = 1.85;
-
-        double bodyMassIndex;
-
-        bodyMassIndex = weight / (hight * hight);
+        BmiService service = new BmiService();
+        double bodyMassIndex = service.calculate(65, 1.95);
 
         System.out.println(bodyMassIndex);
 
